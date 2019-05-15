@@ -11,8 +11,18 @@ html, body {
     position: absolute;
     top: 50%;
     left: 50%;
-    border: blue 2px solid;
-    width: 650px;
-    height: 650px;
+    width: 800px;
+    height: 800px;
     transform: translate(-50%, -50%);
+}
+
+.Table{
+    width:100%;
+    height:100%;
+    border: blue 2px solid;
+    border-collapse:collapse;
+}
+
+.Cell{
+    border:1px solid lightblue;
 }
