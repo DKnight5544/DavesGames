@@ -1,0 +1,111 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.container {
+    width: 98%;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+
+.banner{ 
+    width:100%;
+    border: 2px solid blue;
+    font-size:30px;
+    font-weight:bold;
+    background-color: blue;
+    color: white;
+    text-align:center; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.grid {
+    width: 100%;
+    border: 2px solid blue;
+    color: blue;
+    padding: 10px 5px 10px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.gridTable {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+.rl {
+    border-right: 1px solid blue;
+}
+
+.bl {
+    border-bottom: 1px solid blue;
+    padding-bottom: 8px;
+}
+.xl {
+    padding-bottom: 8px;
+}
+
+.inp {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px dashed lightblue;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.button {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 25px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border:none;
+}
+
+#ten_key_wrapper {
+    display: none;
+    margin-top: 20px;
+}
+
+#ten_key_pad {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ten_key_btn {
+    width: 10%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+}
