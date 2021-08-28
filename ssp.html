@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>SUDOKU SOLVER PRO</title>
+    <script type="text/javascript" src="ssp.js?ver=001"></script>
+    <script type="text/javascript" src="ssp_solver.js?ver=001"></script>    
+    <link rel="stylesheet" type="text/css" href="ssp.css?ver=001">
+
+</head>
+
+<body onload="begin();">
+    <div class="container">
+
+        <div class="banner">SUDOKU SOLVER PRO</div>
+
+        <div class="grid">
+            <table class="gridTable">
+                <tr>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl rl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl rl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl rl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl rl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                    <td class="bl"><div class="inp">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                </tr>
+                <tr>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td class="rl"><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                    <td><div class="inp">&nbsp;</div></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="ten_key_wrapper">
+            <table id="ten_key_pad">
+                <tr>
+                    <td class="ten_key_btn">1</td>
+                    <td class="ten_key_btn">2</td>
+                    <td class="ten_key_btn">3</td>
+                    <td class="ten_key_btn">4</td>
+                    <td class="ten_key_btn">5</td>
+                    <td class="ten_key_btn">6</td>
+                    <td class="ten_key_btn">7</td>
+                    <td class="ten_key_btn">8</td>
+                    <td class="ten_key_btn">9</td>
+                    <td class="ten_key_btn">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+
+        <button id="solve_button" class="button" onclick="button_click();">SOLVE</button>
+
+
+    </div>
+</body>
+</html>

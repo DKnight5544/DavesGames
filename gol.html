@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="gol.css"/>
+    <script src="gol.js"></script>
+</head>
+<body onload="begin();">
+
+    <div id="mainDiv">
+
+    </div>
+
+    <button id="btnTick" onclick="tickButton_onclick();">Tick</button>
+    <button id="btnStart" onclick="startButton_onclick();">Start</button>
+    <button id="btnSlower" onclick="slowerButton_onclick();">Slower</button>
+    <button id="btnFaster" onclick="fasterButton_onclick();">Faster</button>
+    <button id="btnReset" onclick="resetButton_onclick();">Reset</button>
+    <span id="spnTicks">Ticks = 0</span>
+</body>
+</html>
