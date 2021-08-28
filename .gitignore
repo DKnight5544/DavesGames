@@ -135,6 +135,9 @@ DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
+# App_Data Directory
+App_Data/
+
 # Click-Once directory
 publish/
 
