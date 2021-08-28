@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta property="og:image" content="https://www.daves.games/d2dScreenShot.png" />
+    <meta property="og:title" content="Dave Knight's Picture Puzzle" />
+    <meta property="og:type" content="game" />
+    <meta property="og:description" content="2D Slider Puzzles to Solve." />
+
+    <title>Picture Puzzle</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body onload="begin();">
+
+
+    <div id="container">
+
+        <div id="banner">
+            <span></span>
+        </div>
+
+
+        <div class="outer-div"><div id="r00c00" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r00c01" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r00c02" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r00c03" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r00c04" class="inner-div"></div></div>
+
+        <div class="outer-div"><div id="r01c00" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r01c01" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r01c02" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r01c03" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r01c04" class="inner-div"></div></div>
+
+        <div class="outer-div"><div id="r02c00" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r02c01" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r02c02" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r02c03" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r02c04" class="inner-div"></div></div>
+
+        <div class="outer-div"><div id="r03c00" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r03c01" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r03c02" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r03c03" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r03c04" class="inner-div"></div></div>
+
+        <div class="outer-div"><div id="r04c00" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r04c01" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r04c02" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r04c03" class="inner-div"></div></div>
+        <div class="outer-div"><div id="r04c04" class="inner-div"></div></div>
+
+        <div id="footer" colspan="5">
+            <table class="footer-table">
+                <tr>
+                    <td class="footer-td td1"><button onclick="toggleShowNumbers(this)">SHOW</button></td>
+                    <td class="footer-td td2"><button onclick="shuffle()">SHUFFLE</button></td>
+                    <td class="footer-td td3" id="moveCount">0</td>
+                    <td class="footer-td td4" id="percentComplete">0%</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>

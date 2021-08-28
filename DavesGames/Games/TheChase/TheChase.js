@@ -1,5 +1,5 @@
 ﻿
-let innerDiv;
+let innerTableContainer;
 let cells = [];
 let timer = null;
 
@@ -44,7 +44,7 @@ function body_onload() {
 
     let td;
 
-    innerDiv = document.getElementById("InnerDiv");
+    innerTableContainer = document.getElementById("innerTableContainer");
     buildTable();
 
 
@@ -141,7 +141,7 @@ function body_onload() {
 
     }
 
-    innerDiv.focus();
+    innerTableContainer.focus();
 }
 
 
@@ -172,7 +172,7 @@ function buildTable() {
         table.appendChild(tr);
     }
 
-    innerDiv.appendChild(table);
+    innerTableContainer.appendChild(table);
 
 }
 
